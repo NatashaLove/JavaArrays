@@ -22,5 +22,27 @@ public class JavaArrays {
             }
         }
 
+        //taking space for future elements of array
+        int[]newArray = new int[5];
+        String[]newStringArray=new String[5];
+
+        newArray[0]= 3;
+        newArray[1]=5;
+        newArray[2]=7;
+        newArray[3]=8;
+        newArray[4]=89;
+
+        for (int a=0;a<newArray.length;a++){
+            System.out.println(newArray[a]);
+        }
+        newStringArray[0]= "Billy";
+        newStringArray[1]="Anna";
+        newStringArray[2]="Natalia";
+        newStringArray[3]="Sonya";
+        newStringArray[4]="Olga";
+
+        for (int b=0;b<newStringArray.length;b++){
+            System.out.println(newStringArray[b]);
+        }
     }
 }
