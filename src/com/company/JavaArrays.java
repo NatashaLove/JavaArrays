@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class JavaArrays {
 
     public static void main(String[] args) {
@@ -44,5 +46,49 @@ public class JavaArrays {
         for (int b=0;b<newStringArray.length;b++){
             System.out.println(newStringArray[b]);
         }
+
+        //ArrayLists
+        ArrayList <Object> animals = new ArrayList();
+        animals.add("Pig");
+        animals.add("Cow");
+        animals.add("Horse");
+        System.out.println(animals.get(2));
+
+        for (int c=0; c<animals.size(); c++){
+
+            System.out.println(animals.get(c));
+        }
+        //remove object at index
+        animals.remove(0);
+
+        //foreach
+        //the type must be specified - like in the ArrayList! Object/ String , etc!
+        for (Object animal : animals) {
+            System.out.println(animal);
+
+        }
+        //add at index:0, element: "Dog"
+        animals.add(0, "Dog");
+        //remove object (by name)
+        animals.remove("Cow");
+
+
+        for (Object animal : animals) {
+            System.out.println(animal);
+
+        }
+
+        System.out.println(animals.size());
+
+        animals.add("Parrot");
+
+        if (animals.contains("Parrot")){
+            animals.remove("Parrot");
+            System.out.println("Object Parrot removed!");
+        }else{
+            System.out.println("Nope..");
+        }
+
+
     }
 }
